@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "meow • All posts by \"artificial-intelligence\" category",
+    "description": "早安>.<",
+    "home_page_url": "http://onon1101.github.io",
+    "items": [
+        {
+            "id": "http://onon1101.github.io/2023/06/03/Artificial-Intelligence/Deep-Learning/no2/",
+            "url": "http://onon1101.github.io/2023/06/03/Artificial-Intelligence/Deep-Learning/no2/",
+            "title": "No.2 感知機",
+            "date_published": "2023-06-03T09:02:00.000Z",
+            "content_html": "<h2 id=\"對感知機產生好奇\"><a class=\"markdownIt-Anchor\" href=\"#對感知機產生好奇\">#</a> 對感知機產生好奇</h2>\n<p>在記錄說明機器學習的過程中，也會說明學習的一些思維。<br>\n而作者在說明他對機器學習的了解中，發現他是沒有問題的，但這恰恰是最可怕的，因為對於一個專業項目是停滯不前的。因此她從感知機的底層開始探究起問題。</p>\n<div class=\"note info\">\n<ul>\n<li>\n<p>作者知道神經網路就是在模擬生物的神經系統，且都是由神經元組成，而其能實現多個信號輸入一個信號輸出</p>\n</li>\n<li>\n<p>因此作者提出了一個疑問，神經網路裡面的多對一就是一種樹，那麼跟數學函數裡面的多對一，和數據結構裡面的樹究竟有什麼樣子的差別</p>\n</li>\n</ul>\n</div>\n<p><img data-src=\"3.jpg\" alt><br>\n<img data-src=\"4.jpg\" alt></p>\n<h2 id=\"什麼是感知機\"><a class=\"markdownIt-Anchor\" href=\"#什麼是感知機\">#</a> 什麼是感知機</h2>\n<p>在人類的神經系統裡面有一個基本的單元稱為  <code>神經元</code>  ，在神經網路裡面也有一個基本的單元稱為  <code>感知機</code>  。</p>\n<p><img data-src=\"2.jpg\" alt></p>\n<p>當時有人提出  <code>感知機</code>  有一個缺陷，但從先在神經網路的流行來看，此項問題已經被解決了。因此他的優勢劣勢都被分析的一清二楚了。<br>\n他說感知機能處理很多邏輯運算，例如：AND, OR, NOT。但是有一個解決不了就是  <code>異或運算</code></p>\n<p>感知機是一個用來分類的工具，例如說這邊有一組身高體重的資料，感知機能判斷哪些人是胖的那些人是瘦的。因此感知機是用來做二元判斷的，他只能輸出  <code>1</code>  或者  <code>-1</code>  。</p>\n<p>總體來說，他就是利用每一筆樣本來調整線的位置，在線的上面為 +1 , 在線的下面為 -1 。</p>\n<p><img data-src=\"6.jpg\" alt></p>\n<p>而這個資料只考慮了二維的資料，如果資料的維度到達三維，或者更高維度，那分界線就不再是線，而是一個平面或者 (n-1) 的一個平面。(線性分類)</p>\n<p>因此我就一個疑問，是否分界線一定要是一個線性的函數，能不能是曲線或者不是一個函數<br>\n而其實可以是線性也可以是非線性的，但定義為線性是因為這樣比較好實作與構思，在後面的部分可以疊加多層的感知機來達到曲線的目的</p>\n<p><img data-src=\"7.jpg\" alt></p>\n",
+            "tags": [
+                "hexo"
+            ]
+        },
+        {
+            "id": "http://onon1101.github.io/2023/05/31/Artificial-Intelligence/Deep-Learning/no1/",
+            "url": "http://onon1101.github.io/2023/05/31/Artificial-Intelligence/Deep-Learning/no1/",
+            "title": "No.1 極大似然估計",
+            "date_published": "2023-05-31T09:02:00.000Z",
+            "content_html": "<h1 id=\"什麼是似然\"><a class=\"markdownIt-Anchor\" href=\"#什麼是似然\">#</a> 什麼是似然</h1>\n<p>在理解似然的時候常常會看到與他混淆的名詞， <code>機率</code> 。因此要如何區分機率與似然就成了一個滿大的難題。</p>\n<p>機率：給一組模型參數，預測該結果發生的機率<br>\n似然：給一組發生後的結果，分析這組模型參數可能產生這組的結果</p>\n<p>簡單一點說明是，如果今天有一個猜硬幣正反面的遊戲，那麼在還沒猜硬幣的時候，出現正反兩面的 <code>機率</code> 會是 50% 。如果今天使用一個質地不均勻的硬幣，猜 10 次後統計的結果是 <code>正反反反反正反反反正</code> ，那麼請問這組結果在十次裡面出現的可能性是多少，這個就是 <code>似然</code> 。</p>\n",
+            "tags": [
+                "hexo"
+            ]
+        }
+    ]
+}

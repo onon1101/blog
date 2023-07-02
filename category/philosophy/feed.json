@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "meow • All posts by \"philosophy\" category",
+    "description": "早安>.<",
+    "home_page_url": "http://onon1101.github.io",
+    "items": [
+        {
+            "id": "http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/",
+            "url": "http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/",
+            "title": "No.1 感知機",
+            "date_published": "2023-05-31T09:02:00.000Z",
+            "content_html": "<h2 id=\"前言\"><a class=\"markdownIt-Anchor\" href=\"#前言\">#</a> 前言</h2>\n<p>為什麼會接觸到 “第一性原則” 是因為我在研究機器學習的時候，一位大老在說明他的思考路徑，有人留言說這是一種 “第一性原則” 的思考方式。於是開始好奇什麼是第一性原則。</p>\n<h2 id=\"三種思考方式\"><a class=\"markdownIt-Anchor\" href=\"#三種思考方式\">#</a> 三種思考方式</h2>\n<p>第一性原理是由亞里士多德提出的，他說：每個系統中存在一個最基本的命題，它不能被違背或刪除。聽起來或許有點抽象，但等等我會說明他是什麼意思。另外一種思考方式是歸納法，在生活當中比較常用的思考邏輯。最後一種也是一個演意法</p>\n<div class=\"note info\">\n<ul>\n<li>演繹法是用邏輯來推理問題</li>\n<li>歸納法是根據經驗來解決問題</li>\n</ul>\n</div>\n<p>這邊引用網路上面的例子，如果今天有三位船長看到了冰山。</p>\n<ul>\n<li>\n<p>運用歸納法的船長會說：我上次遇到的冰山在水面下還有一個大冰山，我上上次遇到的冰山也是這樣，泰坦尼克號遇到的冰山也是一樣的，所以這個冰山下面一定也會有一個大冰山，看來我要小心地繞過去。</p>\n</li>\n<li>\n<p>運用第一性原則的船長會說：命題：冰山是會移動的。推理：冰山一定是浮在水中，且根據浮力定律 (物體排開的水會等於它自身的重量), 因此底下有一個更大塊的冰山，故需小心的繞過去。</p>\n</li>\n<li>\n<p>運用歸因法的船長會說：問題：靠近冰山的旁邊會沈船。推理：沈船是因為擦撞到物體，而如果靠近冰山旁邊也會沈船，代表冰山下面是有一塊更大的冰山，故需小心的繞過去。</p>\n</li>\n</ul>\n",
+            "tags": [
+                "hexo"
+            ]
+        }
+    ]
+}

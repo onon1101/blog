@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://onon1101.github.io</id>
+    <title>meow • Posts by &#34;network&#34; category</title>
+    <link href="http://onon1101.github.io" />
+    <updated>2023-05-05T16:55:35.000Z</updated>
+    <category term="hexo" />
+    <category term="教學 Discrete-Mathematics" />
+    <category term="教學 C/C++" />
+    <entry>
+        <id>http://onon1101.github.io/2023/05/06/web/network/no2/</id>
+        <title>No.2 DMZ 非軍事化區</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/05/06/web/network/no2/"/>
+        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;這篇是我在寫 &lt;code&gt;網路安全&lt;/code&gt; 的時候有的一個疑問，什麼是 DMZ 在我設定的部分，跟她的理念好像兜不攏。記得那時候因為內網有 Openwrt, 所以為了要把全部的 port 開放，只看到了可以用 DMZ, 沒有深入理解她的原理，今天就是來還債的。&lt;/p&gt;
+&lt;h2 id=&#34;dmz&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#dmz&#34;&gt;#&lt;/a&gt; DMZ&lt;/h2&gt;
+&lt;p&gt;全稱 Demilitarized Zone (非軍事化區域), 從字面上理解是攻擊者和管理者都不會去攻擊或者管理的區域，因此她有以下的幾個特點。&lt;br&gt;
+- DMZ 是與內網完全隔離&lt;br&gt;
+ - 內網與外網都可以訪問 DMZ 區域，但是 DMZ 並不能訪問外網和內網。&lt;br&gt;
+- 通常都放一些被攻擊不太會受影響的資料&lt;br&gt;
+&lt;img data-src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/DMZ_network_diagram_1_firewall.svg/1200px-DMZ_network_diagram_1_firewall.svg.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;可是簡單來說，通常比較建議使用 port forwarding, 一方面是家用 router 的 DMZ 比不上十幾萬的防火牆設備，一方面是 port 全部打開是不太安全的。&lt;/p&gt;
+&lt;h2 id=&#34;port-forwarding-與-dmz-的優先權&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#port-forwarding-與-dmz-的優先權&#34;&gt;#&lt;/a&gt; port forwarding 與 DMZ 的優先權&lt;/h2&gt;
+&lt;p&gt;通常 port 的優先權為如下：DMZ - 非軍事區 &amp;gt; Virtual Server - 虛擬主機 &amp;gt; IP Forwording&amp;gt;Special Application&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#reference&#34;&gt;#&lt;/a&gt; Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjU2Mzk2OC9hcnRpY2xlL2RldGFpbHMvMTA4Nzg5NTg4&#34;&gt;CDNA&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>2023-05-05T16:55:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/04/22/web/network/no1/</id>
+        <title>No.1 什麼是SSL/TSL</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/04/22/web/network/no1/"/>
+        <content type="html">&lt;h2 id=&#34;啥&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#啥&#34;&gt;#&lt;/a&gt; 啥&lt;/h2&gt;
+&lt;p&gt;SSL/TLS 是一種安全加密協議，主要保護兩溝通端，溝通過程，以及確保身分不會被冒充。&lt;br&gt;
+在最一開始由 SSL 先被提出來可以參考以下…&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1994 年，NetScape 公司设计了 SSL 协议（Secure Sockets Layer）的 1.0 版，但是未发布。&lt;/p&gt;
+&lt;p&gt;1995 年，NetScape 公司发布 SSL 2.0 版，很快发现有严重漏洞。&lt;/p&gt;
+&lt;p&gt;1996 年，SSL 3.0 版问世，得到大规模应用。&lt;/p&gt;
+&lt;p&gt;1999 年，互联网标准化组织 ISOC 接替 NetScape 公司，发布了 SSL 的升级版 TLS 1.0 版。&lt;/p&gt;
+&lt;p&gt;2006 年和 2008 年，TLS 进行了两次升级，分别为 TLS 1.1 版和 TLS 1.2 版。最新的变动是 2011 年 TLS 1.2 的修订版。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;參考資料：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubGl4bC5jbi8yMDIxLzA2MjA0ODAxNy5odG1sI3RvYy1oZWFkaW5nLTE=&#34;&gt;https://www.lixl.cn/2021/062048017.html#toc-heading-1&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;SSL/TLS 可以用在 https, SMTP, FTP…&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic.lixl.cn/2020/v2-d050edfb2dbf0501562764efc4a001a3_1440w.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;啥是憑證&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#啥是憑證&#34;&gt;#&lt;/a&gt; 啥是憑證&lt;/h2&gt;
+&lt;p&gt;憑證是一種可以被信任的證書，為什麼它可以被信任。由於他是由雙方都可以信任的第三方所發放的證書，所以當我看到這一份證書時，就可以確認他沒有被偽裝。簡單來說，只要證書可信，公鑰就是可信的。&lt;/p&gt;
+&lt;h2 id=&#34;運作過程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#運作過程&#34;&gt;#&lt;/a&gt; 運作過程&lt;/h2&gt;
+&lt;p&gt;http 由於是明文的傳輸，因此需要一種方法確保溝通中的安全，也就是採取 SSL/TLS 的技術。&lt;/p&gt;
+&lt;p&gt;在參考資料中有說道，明文傳輸有三個大風險&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;竊聽風險（eavesdropping） : 雙方溝通的內容可以被竊聽&lt;/li&gt;
+&lt;li&gt;竄改風險（tampering）     : 雙方隨時可以隨時竄改通信內容，當別人穿送資料的時候，再一次確認卻不承認有傳送資料的這件事&lt;/li&gt;
+&lt;li&gt;冒充風險（pretending）    : 雙方隨時可以被其他人冒充&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在加密中可以確保三樣安全性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;加密傳輸：在加密過程中，不會被其他人監聽&lt;/li&gt;
+&lt;li&gt;身分證書：不會被客戶端或者伺服器端不會被其他人偽裝&lt;/li&gt;
+&lt;li&gt;校驗內容：在溝通時就會發現資料被竄改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;竊聽 (eavesdrop)&lt;br&gt;
+ 竊聽指的是當我和其他人溝通的時候，有人在竊聽我們之間的溝通內容。這樣會導致我們被偷走了資料還不知道。&lt;/p&gt;
+&lt;p&gt;而解決的方式是用加密的方式溝通，只有傳輸雙方知道的內容才會避免。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;005334.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;欺騙 (spoofing) 以及攢改 (falsification)&lt;br&gt;
+ 意旨 A 傳輸給 B 時，沒辦法確定是否 B 為第三方的偽裝，這個是欺騙。當 A 傳輸給 B 的時候，實際上是傳給第三方再傳給 B, 這樣稱為竄改。&lt;/p&gt;
+&lt;p&gt;解決的方法必須用數位簽章還有訊息鑑別馬的方式。&lt;br&gt;
+&lt;img data-src=&#34;005418.jpg&#34; alt&gt;&lt;br&gt;
+&lt;img data-src=&#34;005451.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;抵賴 (repudiation)&lt;br&gt;
+ 抵賴意旨說當 A 傳給 B 資料時，再確認的時候卻說 A 並沒有傳輸，造成可以竄改通信內容。&lt;/p&gt;
+&lt;p&gt;解決還是用數位簽章的方式。&lt;br&gt;
+&lt;img data-src=&#34;005517.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;tls-的架構&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tls-的架構&#34;&gt;#&lt;/a&gt; TLS 的架構&lt;/h2&gt;
+&lt;p&gt;TLS 可以分層兩層，底下那層紀錄下第一次溝通所確定使用的一些資料比如加密方法，然後使用對稱密碼對資料進行加密。&lt;br&gt;
+上層可以分成四個部分：握手協議，密碼規格變更協議，警告協議，應用數據協議。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;握手協議：在第一次溝通時，雙方商議密碼算法並且共享密鑰，證書認證之類的…&lt;/li&gt;
+&lt;li&gt;密碼規格變更協議：跟傳送變更密碼方式&lt;/li&gt;
+&lt;li&gt;警告協議：當有警告訊息時，傳送給對方&lt;/li&gt;
+&lt;li&gt;應用數據協議：將負責由 TLS 要乘載的資料加密，並傳送。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;v2-74138889aeea5dbdfdcb4970caeaf5a2_1440w.png&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tls中-公鑰與會話金鑰session-key有甚麼樣的關係&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tls中-公鑰與會話金鑰session-key有甚麼樣的關係&#34;&gt;#&lt;/a&gt; TLS 中，公鑰與會話金鑰 (session key) 有甚麼樣的關係&lt;/h2&gt;
+&lt;p&gt;公鑰是放在公開的地方，因此要怎麼確認公鑰確實代表我們要傳送的端點。通常公鑰會隨副一份憑證，而憑證是由雙方可信任的第三方所產生的，並且她是唯一的。&lt;/p&gt;
+&lt;p&gt;而公私鑰採用的是非對稱加密，如果溝通的資料都是透過如此傳輸，效率會非常的慢。因此公鑰是拿來產生 session key 後，雙方在用 session key 去溝通，每一次溝通都會重新產生一組，而且他們是對稱的加密方法，固然會快很多。&lt;/p&gt;
+&lt;p&gt;所謂的握手階段指的是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;客戶端向伺服器端索取公鑰&lt;/li&gt;
+&lt;li&gt;雙方協商會話密鑰&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;握手階段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#握手階段&#34;&gt;#&lt;/a&gt; 握手階段&lt;/h2&gt;
+&lt;p&gt;握手階段有四個階段，在雙方溝通的過程中，都是明文的方式。&lt;br&gt;
+&lt;img data-src=&#34;bg2014020502.png&#34; alt&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-客戶端發出連線請求&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-客戶端發出連線請求&#34;&gt;#&lt;/a&gt; 1. 客戶端發出連線請求&lt;/h3&gt;
+&lt;p&gt;客戶端送給伺服器會有這些訊息&lt;/p&gt;
+&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;客戶端能使用的SSL/TLS 1.0, 1.1 or 1.2溝通協議&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 給一個自己生成的隨機數, 之後產生session key 使用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 可以支持的加密方式, RSA 或其他非對稱加密方式。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 支持壓縮方式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;資料說這邊客戶端並不會傳送目的端的域名，所以一台伺服器只能有一個憑證。&lt;/p&gt;
+&lt;h3 id=&#34;2-伺服器端回應客戶端請求&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-伺服器端回應客戶端請求&#34;&gt;#&lt;/a&gt; 2. 伺服器端回應客戶端請求&lt;/h3&gt;
+&lt;p&gt;伺服器傳送給客戶端這些訊息&lt;/p&gt;
+&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;確認使用的SSL/TLS溝通協議, 如果不支持的話就結束通話。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 生成一個隨機數, 用於對話加密&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 確認使用的加密方式&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 伺服器憑證&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;資料說有時候還會在這邊要求客戶端提供 &amp;quot;客戶端證書&amp;quot;, 確保伺服器只對某些用戶提供服務。&lt;/p&gt;
+&lt;h3 id=&#34;3-客戶端回應&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-客戶端回應&#34;&gt;#&lt;/a&gt; 3. 客戶端回應&lt;/h3&gt;
+&lt;p&gt;如果伺服器的憑證並不是可被信任的，就會通知使用者是否要繼續溝通。&lt;/p&gt;
+&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;再產生一個隨機數, 並用伺服器公鑰加密&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 溝通方式需要改變, 代表後面的溝通都用雙方溝通的加密方式對話。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 發送hash 代表握手階段結束, 並且也是前面發送所有內容的hash, 用來給伺服器較驗&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;4-伺服器回應&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-伺服器回應&#34;&gt;#&lt;/a&gt; 4. 伺服器回應&lt;/h3&gt;
+&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;溝通方式確認改變, 確認收到之後都用加密方式對話&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; 通知握手結束, 也是前面所有內容的hash值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;在這之後就是 Http 的溝通範圍了，完全交給他了。不過在溝通的過程中都會使用 session key 對話。&lt;/p&gt;
+&lt;p&gt;以上握手部分都是參考這個&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubGl4bC5jbi8yMDIxLzA2MjA0ODAxNy5odG1s&#34;&gt;網站&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#reference&#34;&gt;#&lt;/a&gt; Reference&lt;/h2&gt;
+&lt;p&gt;讀者有興趣可以到以下網站了解更多。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucHVtby5jb20udHcvc2VjdXJpdHkvc3NsL3NzbC5qc3Ajb25l&#34;&gt;no.1&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9uZXdzLmdhbmRpLm5ldC96aC1oYW50LzIwMjIvMDIvd2hhdHMtdGhlLWRpZmZlcmVuY2UtYmV0d2Vlbi1zc2wtYW5kLXRscy8=&#34;&gt;no.2&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubGl4bC5jbi8yMDIxLzA2MjA0ODAxNy5odG1s&#34;&gt;no.3&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaHViby5pby9odHRwcy8jc2Vzc2lvbi1rZXktJUU2JTlDJTgzJUU4JUE5JUIxJUU1JUFGJTg2JUU5JTkxJUIwLSVFNiU5OCVBRiVFNCVCQiU4MCVFOSVCQSVCQw==&#34;&gt;no.4&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY2xvdWRmbGFyZS5jb20vemgtY24vbGVhcm5pbmcvc3NsL3doYXQtaXMtYS1zZXNzaW9uLWtleS8=&#34;&gt;no.5&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdXBwb3J0LnVuZXRob3N0LmNvbS9pbmRleC5waHA/cnA9L2tub3dsZWRnZWJhc2UvODIvU1NMU1NMLWNlcnRpZmljYXRlLmh0bWw=&#34;&gt;no.6&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <updated>2023-04-22T13:08:55.000Z</updated>
+    </entry>
+</feed>

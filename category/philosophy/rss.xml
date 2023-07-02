@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>meow • Posts by &#34;philosophy&#34; category</title>
+        <link>http://onon1101.github.io</link>
+        <description>早安&gt;.&lt;</description>
+        <language>zh-TW</language>
+        <pubDate>Wed, 31 May 2023 17:02:00 +0800</pubDate>
+        <lastBuildDate>Wed, 31 May 2023 17:02:00 +0800</lastBuildDate>
+        <category>hexo</category>
+        <category>教學 Discrete-Mathematics</category>
+        <category>教學 C/C++</category>
+        <item>
+            <guid isPermalink="true">http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/</guid>
+            <title>No.1 感知機</title>
+            <link>http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/</link>
+            <category>hexo</category>
+            <pubDate>Wed, 31 May 2023 17:02:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;為什麼會接觸到 “第一性原則” 是因為我在研究機器學習的時候，一位大老在說明他的思考路徑，有人留言說這是一種 “第一性原則” 的思考方式。於是開始好奇什麼是第一性原則。&lt;/p&gt;
+&lt;h2 id=&#34;三種思考方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三種思考方式&#34;&gt;#&lt;/a&gt; 三種思考方式&lt;/h2&gt;
+&lt;p&gt;第一性原理是由亞里士多德提出的，他說：每個系統中存在一個最基本的命題，它不能被違背或刪除。聽起來或許有點抽象，但等等我會說明他是什麼意思。另外一種思考方式是歸納法，在生活當中比較常用的思考邏輯。最後一種也是一個演意法&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;演繹法是用邏輯來推理問題&lt;/li&gt;
+&lt;li&gt;歸納法是根據經驗來解決問題&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;這邊引用網路上面的例子，如果今天有三位船長看到了冰山。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;運用歸納法的船長會說：我上次遇到的冰山在水面下還有一個大冰山，我上上次遇到的冰山也是這樣，泰坦尼克號遇到的冰山也是一樣的，所以這個冰山下面一定也會有一個大冰山，看來我要小心地繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;運用第一性原則的船長會說：命題：冰山是會移動的。推理：冰山一定是浮在水中，且根據浮力定律 (物體排開的水會等於它自身的重量), 因此底下有一個更大塊的冰山，故需小心的繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;運用歸因法的船長會說：問題：靠近冰山的旁邊會沈船。推理：沈船是因為擦撞到物體，而如果靠近冰山旁邊也會沈船，代表冰山下面是有一塊更大的冰山，故需小心的繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

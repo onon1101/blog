@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /categories/
+Sitmap: https://onon1101.github.io/sitmap.xml
+
+
+
+
+
+

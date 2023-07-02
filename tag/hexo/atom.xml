@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://onon1101.github.io</id>
+    <title>meow • Posts by &#34;hexo&#34; tag</title>
+    <link href="http://onon1101.github.io" />
+    <updated>2023-06-03T09:02:00.000Z</updated>
+    <category term="hexo" />
+    <category term="教學 Discrete-Mathematics" />
+    <category term="教學 C/C++" />
+    <entry>
+        <id>http://onon1101.github.io/2023/06/03/Artificial-Intelligence/Deep-Learning/no2/</id>
+        <title>No.2 感知機</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/06/03/Artificial-Intelligence/Deep-Learning/no2/"/>
+        <content type="html">&lt;h2 id=&#34;對感知機產生好奇&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#對感知機產生好奇&#34;&gt;#&lt;/a&gt; 對感知機產生好奇&lt;/h2&gt;
+&lt;p&gt;在記錄說明機器學習的過程中，也會說明學習的一些思維。&lt;br&gt;
+而作者在說明他對機器學習的了解中，發現他是沒有問題的，但這恰恰是最可怕的，因為對於一個專業項目是停滯不前的。因此她從感知機的底層開始探究起問題。&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;作者知道神經網路就是在模擬生物的神經系統，且都是由神經元組成，而其能實現多個信號輸入一個信號輸出&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;因此作者提出了一個疑問，神經網路裡面的多對一就是一種樹，那麼跟數學函數裡面的多對一，和數據結構裡面的樹究竟有什麼樣子的差別&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img data-src=&#34;3.jpg&#34; alt&gt;&lt;br&gt;
+&lt;img data-src=&#34;4.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;h2 id=&#34;什麼是感知機&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什麼是感知機&#34;&gt;#&lt;/a&gt; 什麼是感知機&lt;/h2&gt;
+&lt;p&gt;在人類的神經系統裡面有一個基本的單元稱為  &lt;code&gt;神經元&lt;/code&gt;  ，在神經網路裡面也有一個基本的單元稱為  &lt;code&gt;感知機&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;2.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;當時有人提出  &lt;code&gt;感知機&lt;/code&gt;  有一個缺陷，但從先在神經網路的流行來看，此項問題已經被解決了。因此他的優勢劣勢都被分析的一清二楚了。&lt;br&gt;
+他說感知機能處理很多邏輯運算，例如：AND, OR, NOT。但是有一個解決不了就是  &lt;code&gt;異或運算&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;感知機是一個用來分類的工具，例如說這邊有一組身高體重的資料，感知機能判斷哪些人是胖的那些人是瘦的。因此感知機是用來做二元判斷的，他只能輸出  &lt;code&gt;1&lt;/code&gt;  或者  &lt;code&gt;-1&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;總體來說，他就是利用每一筆樣本來調整線的位置，在線的上面為 +1 , 在線的下面為 -1 。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;6.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;而這個資料只考慮了二維的資料，如果資料的維度到達三維，或者更高維度，那分界線就不再是線，而是一個平面或者 (n-1) 的一個平面。(線性分類)&lt;/p&gt;
+&lt;p&gt;因此我就一個疑問，是否分界線一定要是一個線性的函數，能不能是曲線或者不是一個函數&lt;br&gt;
+而其實可以是線性也可以是非線性的，但定義為線性是因為這樣比較好實作與構思，在後面的部分可以疊加多層的感知機來達到曲線的目的&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;7.jpg&#34; alt&gt;&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-06-03T09:02:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/05/31/Artificial-Intelligence/Deep-Learning/no1/</id>
+        <title>No.1 極大似然估計</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/05/31/Artificial-Intelligence/Deep-Learning/no1/"/>
+        <content type="html">&lt;h1 id=&#34;什麼是似然&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什麼是似然&#34;&gt;#&lt;/a&gt; 什麼是似然&lt;/h1&gt;
+&lt;p&gt;在理解似然的時候常常會看到與他混淆的名詞， &lt;code&gt;機率&lt;/code&gt; 。因此要如何區分機率與似然就成了一個滿大的難題。&lt;/p&gt;
+&lt;p&gt;機率：給一組模型參數，預測該結果發生的機率&lt;br&gt;
+似然：給一組發生後的結果，分析這組模型參數可能產生這組的結果&lt;/p&gt;
+&lt;p&gt;簡單一點說明是，如果今天有一個猜硬幣正反面的遊戲，那麼在還沒猜硬幣的時候，出現正反兩面的 &lt;code&gt;機率&lt;/code&gt; 會是 50% 。如果今天使用一個質地不均勻的硬幣，猜 10 次後統計的結果是 &lt;code&gt;正反反反反正反反反正&lt;/code&gt; ，那麼請問這組結果在十次裡面出現的可能性是多少，這個就是 &lt;code&gt;似然&lt;/code&gt; 。&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-05-31T09:02:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/</id>
+        <title>No.1 感知機</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/"/>
+        <content type="html">&lt;h2 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h2&gt;
+&lt;p&gt;為什麼會接觸到 “第一性原則” 是因為我在研究機器學習的時候，一位大老在說明他的思考路徑，有人留言說這是一種 “第一性原則” 的思考方式。於是開始好奇什麼是第一性原則。&lt;/p&gt;
+&lt;h2 id=&#34;三種思考方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三種思考方式&#34;&gt;#&lt;/a&gt; 三種思考方式&lt;/h2&gt;
+&lt;p&gt;第一性原理是由亞里士多德提出的，他說：每個系統中存在一個最基本的命題，它不能被違背或刪除。聽起來或許有點抽象，但等等我會說明他是什麼意思。另外一種思考方式是歸納法，在生活當中比較常用的思考邏輯。最後一種也是一個演意法&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;演繹法是用邏輯來推理問題&lt;/li&gt;
+&lt;li&gt;歸納法是根據經驗來解決問題&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;這邊引用網路上面的例子，如果今天有三位船長看到了冰山。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;運用歸納法的船長會說：我上次遇到的冰山在水面下還有一個大冰山，我上上次遇到的冰山也是這樣，泰坦尼克號遇到的冰山也是一樣的，所以這個冰山下面一定也會有一個大冰山，看來我要小心地繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;運用第一性原則的船長會說：命題：冰山是會移動的。推理：冰山一定是浮在水中，且根據浮力定律 (物體排開的水會等於它自身的重量), 因此底下有一個更大塊的冰山，故需小心的繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;運用歸因法的船長會說：問題：靠近冰山的旁邊會沈船。推理：沈船是因為擦撞到物體，而如果靠近冰山旁邊也會沈船，代表冰山下面是有一塊更大的冰山，故需小心的繞過去。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-05-31T09:02:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/05/05/web/hexo/no4/</id>
+        <title>Step 4. 使用SEO</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/05/05/web/hexo/no4/"/>
+        <content type="html">&lt;h2 id=&#34;什麼是seo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什麼是seo&#34;&gt;#&lt;/a&gt; 什麼是 SEO&lt;/h2&gt;
+&lt;p&gt;SEO 的全稱是 Search Engine Optimization (搜索引擎優化), 目的在於能讓 google 搜索到你的網站，如果不使用的話，在 google 上面就沒辦法搜索到你的網站。因此需要挑整設定。&lt;/p&gt;
+&lt;h2 id=&#34;怎麼開始&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#怎麼開始&#34;&gt;#&lt;/a&gt; 怎麼開始&lt;/h2&gt;
+&lt;p&gt;首先我們先進入這個&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zZWFyY2guZ29vZ2xlLmNvbS9zZWFyY2gtY29uc29sZS9hYm91dA==&#34;&gt;網站&lt;/span&gt;。並且選擇只控制子網域的部分。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;然後這邊我們提交 html 的方式。&lt;br&gt;
+把他的 html 下載下來並且放到我們的 hexo  &lt;code&gt;hexo-folder/soure/&lt;/code&gt;  資料夾底下，並且我們需要修改裡面的內容。&lt;br&gt;
+&lt;img data-src=&#34;2.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;假設你的 html 裡面寫的是…, 此時我們需要增加一個項目。 &lt;code&gt;layout: false&lt;/code&gt; , 不然 google 並沒有辦法驗證。&lt;/p&gt;
+&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;google-site-verification: googlec66a365c7dc45f00.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight txt&#34;&gt;&lt;figcaption data-lang=&#34;txt&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;layout: false&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;google-site-verification: googlec66a365c7dc45f00.html&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;此時別忘記了&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo cl&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g &lt;span class=&#34;token parameter variable&#34;&gt;-d&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;當做到這裡就可以驗證 google page 了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;sitmap&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sitmap&#34;&gt;#&lt;/a&gt; sitmap&lt;/h2&gt;
+&lt;p&gt;先下載這個&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-generator-sitemap &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;再來去我們的網頁裡面新增 sitmap, 在這邊我們輸入 sitemap.xml。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;4.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;然後我現在做到這一步，後面應該要等他跑了。等一天吧？&lt;br&gt;
+ 在我等了 2 個小時之後他就跑出來了。&lt;/p&gt;
+&lt;p&gt;而這邊有一個問題是他的 icon 並沒有跑出來，查了一下發現他需要遵守一些規則。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;3.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vc2VhcmNoL2RvY3MvYXBwZWFyYW5jZS9mYXZpY29uLWluLXNlYXJjaD92aXNpdF9pZD0yMTY4MzI4MDUyMTQ0Mi04Njg5NjA2MjU4MzUwMDI5Njk5JmFtcDtyZD0xJmFtcDtobD16aC10dw==&#34;&gt;google 的規則&lt;/span&gt;寫這樣說。而我們從規則裡面可以看到一方面他須要 html 還有 icon 大小。而我的問題在於大小不符合。因此我們可以調整一下。&lt;/p&gt;
+&lt;p&gt;在 shodax 的資料夾裡面 &lt;code&gt;hexo-theme-shokax\layout\_partials\head&lt;/code&gt; , 的 head.pug 就可以看的出來。&lt;/p&gt;
+&lt;figure class=&#34;highlight pug&#34;&gt;&lt;figcaption data-lang=&#34;pug&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token tag&#34;&gt;link&lt;span class=&#34;token attributes&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token attr-name&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token string&#34;&gt;&#34;icon&#34;&lt;/span&gt; type&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;image/ico&#34;&lt;/span&gt; sizes&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;48x48&#34;&lt;/span&gt; href&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;statics&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;  theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;assets&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;icon&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;favicon&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token flow-control&#34;&gt;&lt;span class=&#34;token branch keyword&#34;&gt;if&lt;/span&gt; theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;icon&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;apple_touch_icon&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token tag&#34;&gt;link&lt;span class=&#34;token attributes&#34;&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token attr-name&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token attr-value&#34;&gt;&lt;span class=&#34;token string&#34;&gt;&#34;apple-touch-icon&#34;&lt;/span&gt; sizes&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;180x180&#34;&lt;/span&gt; href&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;url_for&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;statics&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;  theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;assets&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; theme&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;icon&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token property-access&#34;&gt;apple_touch_icon&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;5.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;至此我在等一下下，順便聊一下為什麼需要更改 icon, 一方面是比較好看，另外一方面可以增加 SSEO 的評分，畢竟網站的分數越高，他的排名會越前面。&lt;/p&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-05-05T10:00:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/04/08/web/hexo/theme-hexo/</id>
+        <title>Step 3. 給 hexo 套一層酷酷的外皮(shokax)</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/04/08/web/hexo/theme-hexo/"/>
+        <content type="html">&lt;h2 id=&#34;說明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#說明&#34;&gt;#&lt;/a&gt; 說明&lt;/h2&gt;
+&lt;p&gt;預設的 hexo 皮是非常醜的，因此我們可以再原有的基礎上加入 theme, 就能使它變得非常好看。&lt;br&gt;
+我所使用的 theme 是&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3prejA5OC9oZXhvLXRoZW1lLXNob2thWA==&#34;&gt; hexo-theme-shokaX&lt;/span&gt;&lt;br&gt;
+ 但由於 shokaX 的說明資料非常凌亂，因此這邊會大致統整一下&lt;/p&gt;
+&lt;h2 id=&#34;安裝&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安裝&#34;&gt;#&lt;/a&gt; 安裝&lt;/h2&gt;
+&lt;p&gt;hexo 是可以安裝 theme, 簡單來說就是給他套一層皮。這個皮膚是由四個中國人寫的。然後她的安裝方式跟其他的 theme 可能不太一樣，並不是直接拉到 hexo 的 theme 資料夾就好。我覺得安裝可能不太會有問題，這邊就不細說了。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i shokax-cli &lt;span class=&#34;token parameter variable&#34;&gt;--location&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;global &lt;span class=&#34;token comment&#34;&gt;# 初始化 init 環境&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ SXC &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; shokaX&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;安裝完成之後應該就可以看到 網頁的風格 有改變了。&lt;br&gt;
+安裝 shokax 的方法跟一般的安裝方式有點不同，不能將 github 的專案直接放進去 &lt;code&gt;./themes/&lt;/code&gt;  的資料夾&lt;br&gt;
+他必須用自己的 SXC 安裝套件安裝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;設定檔案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#設定檔案&#34;&gt;#&lt;/a&gt; 設定檔案&lt;/h2&gt;
+&lt;p&gt;大部分關於 shokax 的設定檔案都是存在 &lt;code&gt;&amp;lt;hexo&amp;gt;\node_modules\hexo-theme-shokax\_config.yml&lt;/code&gt; , 所以設定檔案有兩份，這邊說一下你可能想知道的設定部分。&lt;/p&gt;
+&lt;p&gt;其實他的註解都寫得滿清楚了，由這邊可以看到。&lt;br&gt;
+&lt;img data-src=&#34;142139.jpg&#34; alt&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;figcaption data-lang=&#34;YAML&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token key atrule&#34;&gt;experiments&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token key atrule&#34;&gt;fixedCover&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&#34;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#這一項修改主頁面背景圖片&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;...&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo new page &lt;span class=&#34;token string&#34;&gt;&#34;about&#34;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#生成 關於網站&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo new page &lt;span class=&#34;token string&#34;&gt;&#34;admiration&#34;&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#生成 關於作者&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;_posts&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#_posts&#34;&gt;#&lt;/a&gt; _posts&lt;/h2&gt;
+&lt;p&gt;在資料夾底下  &lt;code&gt;./source/&lt;/code&gt;  有一個_posts, 這個是專門放置發文的 markdown 檔案，你可以在這邊編寫完成檔案後，會經由 markdown 的編譯器，並發佈到伺服器上。&lt;/p&gt;
+&lt;p&gt;網站範例&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYS90cmVlL21hc3Rlci9leGFtcGxlL3NvdXJjZS9fcG9zdHM=&#34;&gt; example-for-hexo&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;這邊交幾個基礎的語法&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token title important&#34;&gt;#!./source/*.md&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tag: //文章的 Tag&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cover: //文章的背景圖片&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: 早安//標題&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token title important&#34;&gt;date: 2023-04-08//文章的日期&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;---&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;如果在文章裡面要欠入圖片的話，可以在與頁面相同的目錄下開一個名稱相同的資料夾，裡面才存放圖片就可以了。&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;!# test.md&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;![](photo.jpg)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;pre&gt;&lt;code&gt;...
+|--test.md
+|--test
+   |--photo.jpg
+...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;_data&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#_data&#34;&gt;#&lt;/a&gt; _data&lt;/h2&gt;
+&lt;p&gt;這個我還不知道是什麼，之後在補。&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#reference&#34;&gt;#&lt;/a&gt; Reference&lt;/h2&gt;
+&lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;zkz098&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3prejA5OC9oZXhvLXRoZW1lLXNob2thWA==&#34; data-background-image=&#34;/assets/404.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3prejA5OC9oZXhvLXRoZW1lLXNob2thWA==&#34;&gt;這個是theme 的github&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;裡面存放著原始文件&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;kaitaku&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmthaXRha3UueHl6L2d1aWRlLw==&#34; data-background-image=&#34;/assets/404.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmthaXRha3UueHl6L2d1aWRlLw==&#34;&gt;第一份說明書&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;裡面只有少少的說明內容&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;item&#34; title=&#34;lostyu&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34; data-background-image=&#34;/assets/404.png&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;第二份說明書&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;裡面的內容就比較詳細了&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PS: 更多的參考資料可以學習 Next 的設定方式，裡面有很多都是類似的。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-04-08T14:50:35.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/04/08/web/hexo/use-hexo/</id>
+        <title>Step 2. how to use hexo</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/04/08/web/hexo/use-hexo/"/>
+        <content type="html">&lt;h2 id=&#34;前情提要&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前情提要&#34;&gt;#&lt;/a&gt; 前情提要&lt;/h2&gt;
+&lt;p&gt;上一篇講述了怎麼安裝，現在來說怎麼使用。&lt;/p&gt;
+&lt;h1 id=&#34;指令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#指令&#34;&gt;#&lt;/a&gt; 指令&lt;/h1&gt;
+&lt;h2 id=&#34;新增文章&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新增文章&#34;&gt;#&lt;/a&gt; 新增文章&lt;/h2&gt;
+&lt;p&gt;! 以下命令都是在 hexo 資料夾中執行。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo new &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;layout&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;title&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;之後可以去到  &lt;code&gt;./source/*.md&lt;/code&gt;  裡面就有自己新增的檔案&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;清除垃圾&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#清除垃圾&#34;&gt;#&lt;/a&gt; 清除垃圾&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;生成靜態網頁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生成靜態網頁&#34;&gt;#&lt;/a&gt; 生成靜態網頁&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo generate&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;啟動伺服器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#啟動伺服器&#34;&gt;#&lt;/a&gt; 啟動伺服器&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;部屬&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#部屬&#34;&gt;#&lt;/a&gt; 部屬&lt;/h1&gt;
+&lt;p&gt;這邊就不贅述要如何把它放到 github 的靜態網站&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;! 以下命令都是在 hexo 資料夾裡面執行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;安裝專案放上github的套件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安裝專案放上github的套件&#34;&gt;#&lt;/a&gt; 安裝專案放上 Github 的套件&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;修改上傳github的設定檔&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改上傳github的設定檔&#34;&gt;#&lt;/a&gt; 修改上傳 github 的設定檔&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#! ./_config.yml&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;deploy:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  type: &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  repo: https://github.com/&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;username&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;/&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;username&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;.github.io.git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  branch: main //注意這邊要從 master 改成 main&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;開始部屬&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#開始部屬&#34;&gt;#&lt;/a&gt; 開始部屬&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo deploy&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;每一次上傳&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#每一次上傳&#34;&gt;#&lt;/a&gt; 每一次上傳&lt;/h1&gt;
+&lt;h2 id=&#34;部屬指令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#部屬指令&#34;&gt;#&lt;/a&gt; 部屬指令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo cl    // 清除之前建立的靜態檔案&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g     // 建立靜態頁面&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d     // 部署至 GitHub&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;內容編輯&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#內容編輯&#34;&gt;#&lt;/a&gt; 內容編輯&lt;/h1&gt;
+&lt;p&gt;本來我是使用 url 的方式放照片，可缺點是在載入網頁的速度慢，照片顯示受第三方的影響，&lt;br&gt;
+ 所以這邊來說一下如何使用本地的方法。&lt;/p&gt;
+&lt;p&gt;先安裝一下套件&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; https://github.com/CodeFalling/hexo-asset-image &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;我們進入_config.yml 設定啟動相對的路徑，把 false 設定為 true&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;post_asset_folder: &lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight md&#34;&gt;&lt;figcaption data-lang=&#34;Markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;![](照片的名稱)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;等待&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#等待&#34;&gt;#&lt;/a&gt; 等待&lt;/h2&gt;
+&lt;p&gt;這邊大概等個一，兩分鐘就可以看到這樣的畫面了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;https://&amp;lt;username&amp;gt;.github.io&lt;/code&gt; &lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;img data-src=&#34;https://i.imgur.com/X0cAUy6.png&#34; alt&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;reference&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#reference&#34;&gt;#&lt;/a&gt; Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oYWNrbWQuaW8vQEhlaWRpLUxpdS9ub3RlLWhleG8tZ2l0aHVi&#34;&gt;如何安裝 Hexo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-04-08T04:12:30.000Z</updated>
+    </entry>
+    <entry>
+        <id>http://onon1101.github.io/2023/04/08/web/hexo/install-hexo/</id>
+        <title>Step 1. how to install hexo</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/04/08/web/hexo/install-hexo/"/>
+        <content type="html">&lt;p&gt;為什麼需要 hexo, 並且他的功能是什麼呢。簡單來說，hexo 可以更快速的，並且在維護上也會更方便的一個靜態套件，也可以套入各種的風格。&lt;/p&gt;
+&lt;p&gt;而以下會比較粗略的說明要如何安裝 hexo&lt;/p&gt;
+&lt;h2 id=&#34;前置工作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前置工作&#34;&gt;#&lt;/a&gt; 前置工作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ub2RlanMub3JnL3poLXR3L2Rvd25sb2Fk&#34;&gt;node.js&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS8=&#34;&gt;git&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL3poLXR3Lw==&#34;&gt;hexo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo&#34;&gt;#&lt;/a&gt; hexo&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;node 的部分就不贅述，如果有空的話再來補要如何使用 node.js。&lt;br&gt;
+進入 hexo 網頁之後可以看到，一行命令，將他貼到 terminal 並運行他。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-cli &lt;span class=&#34;token parameter variable&#34;&gt;-g&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;接下來我們要創建一個有關於 hexo 的資料夾，將來會把所有有關網站的東西都放在 &amp;lt;你的資料夾&amp;gt; 的裡面，你可以選一個風水比較好的資料夾去存放他。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo init &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;資料夾名稱&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;其中 &amp;lt;資料夾名稱&amp;gt; 可以更換為你喜歡的名稱&lt;br&gt;
+ ex：  &lt;code&gt;hexo init folder&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;初始化作業，我們先進入這個資料夾，並且安裝 npm。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;資料夾名稱&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;這樣就完成基本的安裝了&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#reference&#34;&gt;#&lt;/a&gt; Reference&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oYWNrbWQuaW8vQEhlaWRpLUxpdS9ub3RlLWhleG8tZ2l0aHVi&#34;&gt;如何安裝 Hexo&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有關於如何安裝 hexo, 以及後續維護的參考資料。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="hexo" />
+        <updated>2023-04-07T21:12:20.000Z</updated>
+    </entry>
+</feed>
