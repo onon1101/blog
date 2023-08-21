@@ -3,10 +3,18 @@
     <id>http://onon1101.github.io</id>
     <title>meow • Posts by &#34;教學 discrete-mathematics&#34; tag</title>
     <link href="http://onon1101.github.io" />
-    <updated>2023-05-11T19:08:00.000Z</updated>
+    <updated>2023-08-20T19:32:00.000Z</updated>
     <category term="hexo" />
     <category term="教學 Discrete-Mathematics" />
     <category term="教學 C/C++" />
+    <entry>
+        <id>http://onon1101.github.io/2023/08/21/computer-science/Discrete-Mathematics/lecture-8/</id>
+        <title>lecture-8 P and NP</title>
+        <link rel="alternate" href="http://onon1101.github.io/2023/08/21/computer-science/Discrete-Mathematics/lecture-8/"/>
+        <content type="html"></content>
+        <category term="教學 Discrete-Mathematics" />
+        <updated>2023-08-20T19:32:00.000Z</updated>
+    </entry>
     <entry>
         <id>http://onon1101.github.io/2023/05/12/computer-science/Discrete-Mathematics/lecture-7/</id>
         <title>lecture-7 Algorithms and the Integers Part</title>

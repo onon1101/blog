@@ -5,6 +5,16 @@
     "home_page_url": "http://onon1101.github.io",
     "items": [
         {
+            "id": "http://onon1101.github.io/2023/08/21/computer-science/Discrete-Mathematics/lecture-8/",
+            "url": "http://onon1101.github.io/2023/08/21/computer-science/Discrete-Mathematics/lecture-8/",
+            "title": "lecture-8 P and NP",
+            "date_published": "2023-08-20T19:32:00.000Z",
+            "content_html": "",
+            "tags": [
+                "教學 Discrete-Mathematics"
+            ]
+        },
+        {
             "id": "http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/",
             "url": "http://onon1101.github.io/2023/05/31/computer-science/Philosophy/no1/",
             "title": "No.1 感知機",

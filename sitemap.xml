@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://onon1101.github.io/2023/08/21/computer-science/Discrete-Mathematics/lecture-8/</loc>
+    
+    <lastmod>2023-08-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://onon1101.github.io/2023/04/21/computer-science/windows/daskError/</loc>
     
     <lastmod>2023-07-08</lastmod>
@@ -379,19 +388,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>http://onon1101.github.io/2019/07/25/test/</loc>
-    
-    <lastmod>2023-04-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>http://onon1101.github.io/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -399,21 +399,21 @@
   
   <url>
     <loc>http://onon1101.github.io/tags/hexo/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/tags/%E6%95%99%E5%AD%B8-Discrete-Mathematics/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/tags/%E6%95%99%E5%AD%B8-C-C/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -422,105 +422,105 @@
   
   <url>
     <loc>http://onon1101.github.io/categories/Artificial-Intelligence/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/network-security/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/Artificial-Intelligence/Deep-Learning/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/web/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/network-security/Vulnerability/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/network-security/Detection/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/web/hexo/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/web/Network/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/Computer-Organization/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/Discrete-Mathematics/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/Windows/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/Philosophy/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/windows/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://onon1101.github.io/categories/computer-science/c-c/</loc>
-    <lastmod>2023-07-08</lastmod>
+    <lastmod>2023-08-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
