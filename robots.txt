@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Allow: /about/
 Allow: /categories/
-Sitemap: https://onon1101.github.io/sitmap.xml
+Sitemap: https://onon1101.github.io/sitemap.xml
 
 
 
